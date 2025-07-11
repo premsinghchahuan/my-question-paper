@@ -10,6 +10,7 @@ function QuestionCard() {
     <div className="question-card">
       <h3>{question}</h3>
       <ul>
+      <div className="options">
         {options.map((option, index) => (
           <li key={index}>
             <label>
@@ -24,6 +25,7 @@ function QuestionCard() {
             </label>
           </li>
         ))}
+        </div>
       </ul>
     </div>
   );
